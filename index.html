@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <!--Responsive browser-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Change title as needed-->
+    <title>App Challenge</title>
+
+    <!--Change meta tags as needed-->
+    <meta name="description" content="App challenge">
+    <meta name="author" content="Ashley Stanbridge">
+
+    <!--Add bootstrap/MDBootstrap or font awesome css files and custom css here-->
+    <!--Such as....-->
+    <!--Font Awesome example-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!--Bootstrap CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!--MD Boostrap CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <!--Added custom css stylesheet, change as needed. Remember to put all other css links before custom-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<!--Put background picture/style on body tag-->
+
+<body class=" light-blue lighten-5">
+    <!--Change header as needed-->
+    <header>
+        <h1>App Challenge</h1>
+        <!--Add/change navigation as needed-->
+        <nav>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--Change class on main to container if needed-->
+    <main class="container-fluid">
+        <!--Start of row 1-->
+        <div class="row">
+            <!--Rows have columns - Row 1 Column 1-->
+            <div class="col-md-6">
+                <fieldset class="mt-4">
+                    <label for="guest">Enter your name (2 to 40 characters):</label>
+                    <input id="guest" type="text" minlength="2" maxlength="40" value="Lilly">
+                </fieldset>
+
+                <fieldset class="mt-4">
+                    <label for="firstNumber">Enter first number (1 to 100):</label>
+                    <input id="firstNumber" type="number" min="1" max="100" value=7>
+                    <span id="firstWarning" class="text-danger"></span>
+                </fieldset>
+
+
+                <fieldset class="mt-4">
+                    <label for="secondNumber">Enter second number (1 to 100):</label>
+                    <input id="secondNumber" type="number" min="1" max="100" value="12">
+                    <span id="secondWarning" class="text-danger"></span>
+                </fieldset>
+            </div>
+            <!--End column 1-->
+
+            <!--Row 1 Column 2-->
+            <div class="col-md-6">
+                <fieldset>
+
+                </fieldset>
+            </div>
+            <!--End of Column 2-->
+        </div>
+        <!--End of row 1-->
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3 fixed-bottom">
+
+            <!-- Footer Elements -->
+            <div class="container">
+    
+                <!-- Grid row-->
+                <div class="row">
+    
+                    <!-- Grid column -->
+                    <!--Changed py to get size wanted, change for desired look-->
+                    <div class="col-md-12 py-3">
+                        <!--Took mb-10 away from class, change for desired look-->
+                        <div class="flex-center">
+                            <!-- Facebook -->
+                            <a class="fb-ic" href="https://www.facebook.com/ashley.stanbridge.3">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!-- GitHub-->
+                            <a class="gh-ic" href="https://github.com/AshleyStanbridge96">
+                                <i class="fab fa-github fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!--Linkedin -->
+                            <a class="li-ic" href="https://www.linkedin.com/in/ashley-stanbridge-65035a171/">
+                                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!--Bitbucket -->
+                            <a class="bb-ic" href="https://bitbucket.org/%7B5c3a386a-95e1-4090-a244-a3f5b5e2b968%7D/">
+                                    <i class="fab fa-bitbucket fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                </a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </div>
+            <!-- Footer Elements -->
+            <!-- Copyright -->
+            <!--Changed py to get size wanted, change for desired look-->
+            <div class="footer-copyright text-center py-1">© 2019 Copyright: Ashley Stanbridge
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    
+    
+    <!--Bootstrap/MDBootstrap and custom scripts go here-->
+    <script src="main.js"></script>
+</body>
+
+</html>
