@@ -20,8 +20,8 @@ const findAvg = new Vue ({
             const numStudent = parseInt(this.numStudent)
             const numSection = parseFloat(this.numSection)
 
-            const avg = calcAvg(numStudent, numSection)
-            return `Average is: $ ${avg}`
+            const avg = (calcAvg(numStudent, numSection)).toFixed(2)
+            return `Average is:  ${avg}`
         }
     }
 })
