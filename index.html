@@ -44,20 +44,20 @@
             <div class="col-md-12" style="padding: 6em">
                 <fieldset class="mt-4">
                     <label for="numStudent">Enter the number of students (1 to 40):</label>
-                    <input v-model = "numStudent" id="numStudent" type="number" minlength="1" maxlength="40">
+                    <input v-model="numStudent" id="numStudent" type="number" minlength="1" maxlength="40">
                 </fieldset>
 
                 <fieldset class="mt-4">
-                    <label for="numSection">Enter first number  (1 to 40):</label>
-                    <input v-model = "numSection" id ="numSection" type="number" min="1" max="40">
-                   <!-- <span id="firstWarning" class="text-danger"></span> -->
+                    <label for="numSection">Enter first number (1 to 40):</label>
+                    <input v-model="numSection" id="numSection" type="number" min="1" max="40">
+                    <!-- <span id="firstWarning" class="text-danger"></span> -->
                 </fieldset>
 
                 <button type="button" class="btn btn-primary" id="calcButton">Calculate</button>
-                <p id="result"></p>
+                <p>{{avgTotal}}</p>
             </div>
             <!--End column 1-->
-            
+
         </div>
         <!--End of row 1-->
     </main>
@@ -118,7 +118,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <!--Vue.js library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+
+
+    <!--Custom scripts-->
+    <script src="components/sectionEstimator.js"></script>
 </body>
 
 </html>
