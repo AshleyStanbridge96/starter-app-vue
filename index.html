@@ -39,38 +39,25 @@
     <!--Change class on main to container if needed-->
     <main class="container-fluid d-flex justify-content-center">
         <!--Start of row 1-->
-        <div class="row">
+        <div class="row" id="findAvg">
             <!--Rows have columns - Row 1 Column 1-->
             <div class="col-md-12" style="padding: 6em">
                 <fieldset class="mt-4">
-                    <label for="guest">Enter your name (2 to 40 characters):</label>
-                    <input id="guest" type="text" minlength="2" maxlength="40" value="Lilly">
+                    <label for="numStudent">Enter the number of students (1 to 40):</label>
+                    <input v-model = "numStudent" id="numStudent" type="number" minlength="1" maxlength="40">
                 </fieldset>
 
                 <fieldset class="mt-4">
-                    <label for="firstNumber">Enter first number (1 to 100):</label>
-                    <input id="firstNumber" type="number" min="1" max="100" value=7>
-                    <span id="firstWarning" class="text-danger"></span>
+                    <label for="numSection">Enter first number  (1 to 40):</label>
+                    <input v-model = "numSection" id ="numSection" type="number" min="1" max="40">
+                   <!-- <span id="firstWarning" class="text-danger"></span> -->
                 </fieldset>
 
-
-                <fieldset class="mt-4">
-                    <label for="secondNumber">Enter second number (1 to 100):</label>
-                    <input id="secondNumber" type="number" min="1" max="100" value="12">
-                    <span id="secondWarning" class="text-danger"></span>
-                </fieldset>
                 <button type="button" class="btn btn-primary" id="calcButton">Calculate</button>
                 <p id="result"></p>
             </div>
             <!--End column 1-->
-
-            <!--Row 1 Column 2-->
-            <div class="col-md-6">
-                <fieldset>
-
-                </fieldset>
-            </div>
-            <!--End of Column 2-->
+            
         </div>
         <!--End of row 1-->
     </main>
